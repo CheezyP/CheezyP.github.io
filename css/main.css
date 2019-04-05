@@ -1,0 +1,19 @@
+.fa {
+    padding: 10pt;
+    font-size: 15pt;
+    width: 35pt;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: white;
+    color: rgb(52, 58, 64);
+}
+
+:hover.fa {
+    text-decoration: none;
+    color: rgb(115, 61, 41);
+}
+
+.navbar {
+    opacity: 50%;
+}
