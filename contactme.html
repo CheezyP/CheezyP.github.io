@@ -12,26 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <style>
-        #introduction {
-            text-align: center;
+        footer {
             position: absolute;
-            top: 35%;
-            margin: 0% 15%;
-            color: rgba(0, 0, 0, 0.3);
-            transition: 1s;
-        }
-
-        #introduction:hover {
-            text-align: center;
-            position: absolute;
-            top: 35%;
-            margin: 0% 15%;
-            color: rgb(0, 0, 0);
-            transition: 1s;
-        }
-
-        #navbar {
-            z-index: 1;
+            bottom: 0%;
         }
     </style>
 </head>
@@ -50,8 +33,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarHamburger">
                     <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <!--Menu Drop 1-->
                         <li class="nav-item dropdown">
@@ -96,7 +79,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Github Stats</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="./contactme.html">Contact Me</a>
                         </li>
                     </ul>
@@ -108,93 +91,83 @@
         <br>
         <!--Start of Content-->
         <div>
-            <!--Introduction-->
-            <div class="col-lg-12" id="particles-js">
-                <h2 id="introduction">Hello, my name is Jimmy. I'm currently in the Computer Information Technology
-                    Program at BCIT.</h2>
-            </div>
-            <!--Cards-->
-            <div>
-                <div class="card flex-row flex-wrap" id="card-container">
-                    <div class="card-block col-lg-8">
-                        <h2 class="card-title" style="width: 100%">Background</h2>
-                        <br>
-                        <h4 class="card-text">Born and raised in Metro-Vancouver, I'm a Chinese Canadian with a
-                            background in music, psychology and computer science.</h4>
-                        <br>
-                        <h4 class="card-text">I'm a detail-oriented individual that seeks the best in others.</h4>
-                    </div>
-                    <div class="col-lg-4" style="padding:0 !important" id="img-container">
-                        <div style="overflow:hidden">
-                            <img src="./images/index_img/piano.jpg" width="auto" height="auto" alt="piano">
-                            <a href="#" class="btn">Read More</a>
+            <form style="margin: 5%">
+                <div class="form-row">
+                    <div class="col-lg-12 col-form-label-lg">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="name_input">Name</span>
+                            </div>
+                            <input type="text" class="form-control" id="validationServerUsername" placeholder="John Doe"
+                                aria-describedby="name_input" required>
                         </div>
                     </div>
                 </div>
-                <div class="card flex-row flex-wrap" id="card-container">
-                    <div class="card-block col-lg-8">
-                        <h2 class="card-title">Programming</h2>
-                        <br>
-                        <h4 class="card-text">Programming languages I'm experienced in include:</h4>
-                        <ul>
-                            <li>
-                                <h5>Java</h5>
-                            </li>
-                            <li>
-                                <h5>Python</h5>
-                            </li>
-                            <li>
-                                <h5>SQL</h5>
-                            </li>
-                            <li>
-                                <h5>HTML5/CSS/JavaScript</h5>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4" style="padding:0 !important" id="img-container">
-                        <div style="overflow:hidden">
-                            <img src="./images/index_img/coding.jpg" width="auto" height="auto" alt="piano">
-                            <a href="#" class="btn">Read More</a>
+                <div class="form-row">
+                    <div class="col-lg-12 col-form-label-lg">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="name_input">Email</span>
+                            </div>
+                            <input type="email" class="form-control" id="validationServerUsername"
+                                placeholder="youremail123@gmail.com" aria-describedby="name_input" required>
                         </div>
                     </div>
                 </div>
-                <div class="card flex-row flex-wrap" id="card-container">
-                    <div class="card-block col-lg-8">
-                        <h2 class="card-title">Projects</h2>
-                        <br>
-                        <h4 class="card-text">From Hackathons, to BCIT courses, to my own free time, I've completed
-                            projects.
-                        </h4>
-                        <br>
-                        <h4 class="card-text">Platforms range from Snapchat API/JavaScript, to SQL, to Matplotlib.</h4>
-                    </div>
-                    <div class="col-lg-4" style="padding:0 !important" id="img-container">
-                        <div style="overflow:hidden">
-                            <img src="./images/index_img/github.jpg" width="auto" height="auto" alt="piano">
-                            <a href="#" class="btn">Read More</a>
+                <div class="form-row">
+                    <div class="col-lg-12 col-form-label-lg">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="name_input">Rating</span>
+                            </div>
+                            <select class="custom-select" required placeholder="Rate this website">
+                                <option value="">None</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="name_input">Notes</span>
+                        </div>
+                        <textarea class="form-control" rows="15" id="comment" placeholder="Write your comments here!"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-6">
+                        <button style="width:100%" class="btn btn-danger" type="reset">Clear
+                            Form</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <button style="width:100%" class="btn btn-success" type="submit">Submit
+                            Form</button>
+                    </div>
+                </div>
+            </form>
         </div>
-    </div>
-    <!--End of Content-->
-    <br>
-    <br>
-    <!--Start of footer-->
-    <div class='container-fluid'>
-        <footer class="footer">
-            <hr class="my-4">
-            <div style="text-align: center">
-                <a href="https://www.facebook.com/Jimmy-608069566242063/"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.instagram.com/jch0_/"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/jimmy-ho-881117105/"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/CheezyP"><i class="fa fa-github"></i></a>
-                <p style="color: grey">Copyrighted by Jimmy Ho, 2019 ©</p>
-            </div>
-        </footer>
-    </div>
-    <!--End of footer-->
+        <!--End of Content-->
+        <br>
+        <br>
+        <!--Start of footer-->
+        <div class='container-fluid'>
+            <footer class="footer">
+                <hr class="my-4">
+                <div style="text-align: center">
+                    <a href="https://www.facebook.com/Jimmy-608069566242063/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/jch0_/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jimmy-ho-881117105/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/CheezyP"><i class="fa fa-github"></i></a>
+                    <p style="color: grey">Copyrighted by Jimmy Ho, 2019 ©</p>
+                </div>
+            </footer>
+        </div>
+        <!--End of footer-->
 </body>
 <!--Start Custom JS-->
 <script src="js/main.js"></script>
