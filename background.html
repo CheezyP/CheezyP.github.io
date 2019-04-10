@@ -12,26 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <style>
-        #introduction {
-            text-align: center;
-            position: absolute;
-            top: 35%;
-            margin: 0% 15%;
-            color: rgba(0, 0, 0, 0.3);
-            transition: 1s;
-        }
-
-        #introduction:hover {
-            text-align: center;
-            position: absolute;
-            top: 35%;
-            margin: 0% 15%;
-            color: rgb(0, 0, 0);
-            transition: 1s;
-        }
-
-        #navbar {
-            z-index: 1;
+        img {
+            margin: 0px;
         }
     </style>
 </head>
@@ -50,17 +32,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarHamburger">
                     <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <!--Menu Drop 1-->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id=navbarDropdownMenuLink href="#"
+                            <a class="nav-link dropdown-toggle active" id=navbarDropdownMenuLink href="#"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Me</a>
                             <!--Drop Menu + Animation-->
                             <div class="dropdown-menu animate slideIn bg-light"
                                 aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="./background.html">Background</a>
+                                <a class="dropdown-item" href="#">Background</a>
                                 <a class="dropdown-item" href="#">Skills</a>
                             </div>
                         </li>
@@ -101,79 +83,78 @@
                 </div>
             </nav>
         </header>
-        <!--End of Header-->
-        <br>
-        <br>
-        <!--Start of Content-->
-        <div>
-            <!--Introduction-->
-            <div class="col-lg-12" id="particles-js">
-                <h2 id="introduction">Hello, my name is Jimmy. I'm currently in the Computer Information Technology
-                    Program at BCIT.</h2>
+    </div>
+    <!--End of Header-->
+    <br>
+    <br>
+    <!--Start of Content-->
+    <div class='container-fluid'>
+        <!--Carousels-->
+        <div id="pic-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#pic-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#pic-carousel" data-slide-to="1"></li>
+                <li data-target="#pic-carousel" data-slide-to="2"></li>
+                <li data-target="#pic-carousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/bg_img/van-night1.jpg" width="auto" height="auto"
+                        alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Vancouver, Canada</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/bg_img/guangzhou.jpg" width="auto" height="auto"
+                        alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Guangzhou, China</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/bg_img/banff.jpg" width="auto" height="auto"
+                        alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Banff, Canada</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/bg_img/sanfran.jpg" width="auto" height="auto"
+                        alt="Fourth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>San Francisco, United States</h5>
+                    </div>
+                </div>
+
             </div>
-            <!--Cards-->
-            <div>
-                <div class="card flex-row flex-wrap" id="card-container">
-                    <div class="card-block col-lg-8">
-                        <h2 class="card-title" style="width: 100%">Background</h2>
-                        <br>
-                        <h4 class="card-text">Born and raised in Metro-Vancouver, I'm a Chinese Canadian with a
-                            background in music, psychology and computer science.</h4>
-                        <br>
-                        <h4 class="card-text">I'm a detail-oriented individual that seeks the best in others.</h4>
-                    </div>
-                    <div class="col-lg-4" style="padding:0 !important" id="img-container">
-                        <div style="overflow:hidden">
-                            <img src="./images/index_img/piano.jpg" width="auto" height="auto" alt="piano">
-                            <a href="#" class="btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card flex-row flex-wrap" id="card-container">
-                    <div class="card-block col-lg-8">
-                        <h2 class="card-title">Programming</h2>
-                        <br>
-                        <h4 class="card-text">Programming languages I'm experienced in are:</h4>
-                        <ul>
-                            <li>
-                                <h5>Java</h5>
-                            </li>
-                            <li>
-                                <h5>Python</h5>
-                            </li>
-                            <li>
-                                <h5>SQL</h5>
-                            </li>
-                            <li>
-                                <h5>HTML5/CSS/JavaScript</h5>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4" style="padding:0 !important" id="img-container">
-                        <div style="overflow:hidden">
-                            <img src="./images/index_img/coding.jpg" width="auto" height="auto" alt="piano">
-                            <a href="#" class="btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card flex-row flex-wrap" id="card-container">
-                    <div class="card-block col-lg-8">
-                        <h2 class="card-title">Projects</h2>
-                        <br>
-                        <h4 class="card-text">From Hackathons, to BCIT courses, to my own free time, I've completed
-                            projects.
-                        </h4>
-                        <br>
-                        <h4 class="card-text">Platforms range from Snapchat API/JavaScript, to SQL, to Matplotlib.</h4>
-                    </div>
-                    <div class="col-lg-4" style="padding:0 !important" id="img-container">
-                        <div style="overflow:hidden">
-                            <img src="./images/index_img/github.jpg" width="auto" height="auto" alt="piano">
-                            <a href="#" class="btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a class="carousel-control-prev" href="#pic-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#pic-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--End of Carousel-->
+        <div class="container">
+            <br>
+            <h1 style="text-align: center">Who Am I?</h1>
+            <h4>Born and raised in Vancouver, I'm currently studying in the Computer Information Technology Program at
+                BCIT. I'm a detail-oriented individual that seeks the best in others. I'm always hungry to learn, and
+                willing to grind to my fullest capacity.</h4>
+            <br>
+            <br>
+            <h1 style="text-align: center">Goals</h1>
+            <h4>In Chinese, there is a proverb: 读万卷书，行万里路, meaning reading ten thousand books is not as good as
+                traveling ten thousand miles. Life is too short to be in only one place, there are many more experiences
+                and memories to gain elsewhere. </h4>
+            <h4>Though I've been fortunate enough to visit many beautiful places, such
+                as Guangzhou, Banff, and San Francisco, I want to travel the world someday. </h4>
+            <br>
+            <br>
         </div>
     </div>
     <!--End of Content-->
@@ -197,10 +178,6 @@
 <!--Start Custom JS-->
 <script src="js/main.js"></script>
 <!--End Custom JS-->
-<!--Start of Particle.js-->
-<script src="node_modules/particles.js/particles.js"></script>
-<script src="node_modules/particles.js/demo/js/app.js"></script>
-<!--End of Particle.js-->
 <!--Start of Bootstrap Script Code-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -212,4 +189,5 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
 <!--End of Bootstrap Script Code-->
+
 </html>

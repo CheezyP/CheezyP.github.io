@@ -9,3 +9,17 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
+//Contact Me
+var index = 1;
+document.getElementById('comment-toggle').addEventListener("click", function () {
+    var options = ['Show Comments', 'Hide Comments'];
+    if (index == 1) {
+        document.getElementById('comment-toggle').innerHTML = options[index];
+        index--;
+        console.log(index);
+    } else {
+        document.getElementById('comment-toggle').innerHTML = options[index];
+        index++;
+        console.log(index);
+    }
+})
