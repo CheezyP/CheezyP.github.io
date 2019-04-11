@@ -35,11 +35,10 @@
                         </li>
                         <!--Menu Drop 1-->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id=navbarDropdownMenuLink href="#"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Me</a>
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">About Me</a>
                             <!--Drop Menu + Animation-->
-                            <div class="dropdown-menu animate slideIn bg-light"
-                                aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu animate slideIn bg-light">
                                 <a class="dropdown-item" href="./background.html">Background</a>
                                 <a class="dropdown-item" href="./skills.html">Skills</a>
                             </div>
@@ -47,11 +46,10 @@
                         <!--End of Menu Drop 1-->
                         <!--Menu Drop 2-->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id=navbarDropdownMenuLink href="#"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Interests</a>
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Interests</a>
                             <!--Drop Menu + Animation-->
-                            <div class="dropdown-menu animate slideIn bg-light"
-                                aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu animate slideIn bg-light">
                                 <a class="dropdown-item" href="./music.html">Music</a>
                                 <a class="dropdown-item" href="./food.html">Food</a>
                                 <a class="dropdown-item" href="./smash.html">Smash!</a>
@@ -60,12 +58,11 @@
                         <!--End of Menu Drop 2-->
                         <!--Menu Drop 3-->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id=navbarDropdownMenuLink href="#"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Career
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Career
                                 Paths</a>
                             <!--Drop Menu + Animation-->
-                            <div class="dropdown-menu animate slideIn bg-light"
-                                aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu animate slideIn bg-light">
                                 <a class="dropdown-item" href="./cybersecurity.html">Cybersecurity</a>
                                 <a class="dropdown-item" href="./dev.html">Software/Mobile Developer</a>
                             </div>
@@ -97,7 +94,7 @@
                                 <span class="input-group-text">First Name</span>
                             </div>
                             <input type="text" class="form-control" id="fname_input" placeholder="John Doe" required
-                                aria-describedby="name_input">
+                                aria-describedby="fname_input">
                         </div>
                     </div>
                 </div>
@@ -119,7 +116,7 @@
                                 <span class="input-group-text" id="email">Email</span>
                             </div>
                             <input type="email" class="form-control" id="email_input"
-                                placeholder="youremail123@gmail.com" aria-describedby="name_input">
+                                placeholder="youremail123@gmail.com" aria-describedby="email_input">
                         </div>
                     </div>
                 </div>
@@ -130,7 +127,7 @@
                                 <span class="input-group-text" id="country">Country</span>
                             </div>
                             <input type="email" class="form-control" id="country_input"
-                                placeholder="youremail123@gmail.com" aria-describedby="name_input">
+                                placeholder="youremail123@gmail.com" aria-describedby="country_input">
                         </div>
                     </div>
                 </div>
@@ -180,111 +177,111 @@
         </footer>
     </div>
     <!--End of footer-->
-</body>
-<!--Start Custom JS-->
-<script src="./js/main.js"></script>
-<script>
-    var index = 1;
-    document.getElementById('comment-toggle').addEventListener("click", function () {
-        var options = ['Show Comments', 'Hide Comments'];
-        if (index == 1) {
-            document.getElementById('comment-toggle').innerHTML = options[index];
-            index--;
-            console.log(index);
-        } else {
-            document.getElementById('comment-toggle').innerHTML = options[index];
-            index++;
-            console.log(index);
-        }
-    })
-</script>
-<!--End Custom JS-->
-<!--Start of Bootstrap Script Code-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
-<!--End of Bootstrap Script Code-->
-<!--Start of Firebase Code-->
-<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
-<script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyADb5gPaxLI42UcqnJyMy0OkacHVFfZkPE",
-        authDomain: "github-personal-portfolio.firebaseapp.com",
-        databaseURL: "https://github-personal-portfolio.firebaseio.com",
-        projectId: "github-personal-portfolio",
-        storageBucket: "github-personal-portfolio.appspot.com",
-        messagingSenderId: "719939666925"
-    };
-    firebase.initializeApp(config);
-</script>
-<script>
-    //Contact Me
-    function addData() {
-        var fname = document.getElementById("fname_input").value;
-        var lname = document.getElementById("lname_input").value;
-        var email = document.getElementById("email_input").value;
-        var country = document.getElementById("country_input").value;
-        var comment = document.getElementById("comment_input").value;
-        if (fname == '' && lname == '') {
-            alert(
-                "Hey! I noticed you didn't put your name, you must want to keep your name a secret! Don't worry, I won't say anything!"
-            );
-            fname = 'Mr.';
-            lname = 'Smith';
-            country = 'Canada'
-            comment = 'Looking good buckaroo!';
-        } else {
-            alert("Thank you, " + fname + ' ' + lname + "!\nYour data will now upload to Firebase!");
-        }
-        var db = firebase.firestore();
-        db.collection("comments").add({
-            Comments: comment,
-            FirstName: fname,
-            LastName: lname,
-            Country: country,
-            Email: email
-        }).then(function (docRef) {
-            console.log("Document written with ID: ", docRef.id);
-        }).catch(function (error) {
-            console.error("Error adding document: ", error);
-        });
-        alert("Data is uploaded!");
-    }
-
-    var commentdisplay = document.getElementById('commentsection');
-    var db = firebase.firestore();
-    db.collection("comments").get().then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-            var fname = doc.data().FirstName;
-            var lname = doc.data().LastName;
-            var email = doc.data().Email;
-            var comment = doc.data().Comments;
-            var country = doc.data().Country;
-            if (country == '') {
-                country = 'Canada!';
+    <!--Start Custom JS-->
+    <script src="./js/main.js"></script>
+    <script>
+        var index = 1;
+        document.getElementById('comment-toggle').addEventListener("click", function () {
+            var options = ['Show Comments', 'Hide Comments'];
+            if (index == 1) {
+                document.getElementById('comment-toggle').innerHTML = options[index];
+                index--;
+                console.log(index);
+            } else {
+                document.getElementById('comment-toggle').innerHTML = options[index];
+                index++;
+                console.log(index);
             }
-            var newDiv = document.createElement("div");
-            var fullname = document.createElement("h2");
-            fullname.setAttribute('class', 'card-body');
-            fullname.appendChild(document.createTextNode(fname + ' ' + lname + ' from ' + country));
-            var commentContent = document.createElement("h5");
-            commentContent.setAttribute('class', 'card-footer');
-            commentContent.appendChild(document.createTextNode(comment));
-            newDiv.setAttribute('class', 'card cardbody');
-            newDiv.appendChild(fullname);
-            newDiv.appendChild(commentContent);
-            commentdisplay.appendChild(newDiv);
-            console.log("this happened");
+        })
+    </script>
+    <!--End Custom JS-->
+    <!--Start of Bootstrap Script Code-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!--End of Bootstrap Script Code-->
+    <!--Start of Firebase Code-->
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyADb5gPaxLI42UcqnJyMy0OkacHVFfZkPE",
+            authDomain: "github-personal-portfolio.firebaseapp.com",
+            databaseURL: "https://github-personal-portfolio.firebaseio.com",
+            projectId: "github-personal-portfolio",
+            storageBucket: "github-personal-portfolio.appspot.com",
+            messagingSenderId: "719939666925"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        //Contact Me
+        function addData() {
+            var fname = document.getElementById("fname_input").value;
+            var lname = document.getElementById("lname_input").value;
+            var email = document.getElementById("email_input").value;
+            var country = document.getElementById("country_input").value;
+            var comment = document.getElementById("comment_input").value;
+            if (fname == '' && lname == '') {
+                alert(
+                    "Hey! I noticed you didn't put your name, you must want to keep your name a secret! Don't worry, I won't say anything!"
+                );
+                fname = 'Mr.';
+                lname = 'Smith';
+                country = 'Canada'
+                comment = 'Looking good buckaroo!';
+            } else {
+                alert("Thank you, " + fname + ' ' + lname + "!\nYour data will now upload to Firebase!");
+            }
+            var db = firebase.firestore();
+            db.collection("comments").add({
+                Comments: comment,
+                FirstName: fname,
+                LastName: lname,
+                Country: country,
+                Email: email
+            }).then(function (docRef) {
+                console.log("Document written with ID: ", docRef.id);
+            }).catch(function (error) {
+                console.error("Error adding document: ", error);
+            });
+            alert("Data is uploaded!");
+        }
+
+        var commentdisplay = document.getElementById('commentsection');
+        var db = firebase.firestore();
+        db.collection("comments").get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                var fname = doc.data().FirstName;
+                var lname = doc.data().LastName;
+                var email = doc.data().Email;
+                var comment = doc.data().Comments;
+                var country = doc.data().Country;
+                if (country == '') {
+                    country = 'Canada!';
+                }
+                var newDiv = document.createElement("div");
+                var fullname = document.createElement("h2");
+                fullname.setAttribute('class', 'card-body');
+                fullname.appendChild(document.createTextNode(fname + ' ' + lname + ' from ' + country));
+                var commentContent = document.createElement("h5");
+                commentContent.setAttribute('class', 'card-footer');
+                commentContent.appendChild(document.createTextNode(comment));
+                newDiv.setAttribute('class', 'card cardbody');
+                newDiv.appendChild(fullname);
+                newDiv.appendChild(commentContent);
+                commentdisplay.appendChild(newDiv);
+                console.log("this happened");
+            });
         });
-    });
-</script>
-<!--End of Firebase Code-->
+    </script>
+    <!--End of Firebase Code-->
+</body>
 
 </html>

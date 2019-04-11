@@ -79,25 +79,25 @@
 
 /*End of Navbar Items*/
 /*Start of Content Items*/
-#img-container {
+.img-container {
     position: relative;
 }
 
-#img-container {
+.img-container {
     height: auto;
     -webkit-filter: grayscale(60%);
     filter: grayscale(60%);
     transition: 1s;
 }
 
-#img-container:hover {
+.img-container:hover {
     height: auto;
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     transition: 1s;
 }
 
-#card-container:hover {
+.card-container:hover {
     padding: 5px;
     background-color: rgb(242, 252, 255);
     color: rgb(0, 0, 0);
@@ -105,7 +105,7 @@
     opacity: 1;
 }
 
-#card-container {
+.card-container {
     padding: 5px;
     transition: 1s;
     color: rgba(0, 0, 0, 0.75);
@@ -113,7 +113,7 @@
 }
 
 
-#card-container .btn {
+.card-container .btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -129,7 +129,7 @@
     transition: 0.8s;
 }
 
-#card-container .btn:hover {
+.card-container .btn:hover {
     position: absolute;
     top: 50%;
     left: 50%;
