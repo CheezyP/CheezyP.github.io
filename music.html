@@ -52,7 +52,7 @@
                             <div class="dropdown-menu animate slideIn bg-light"
                                 aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="./background.html">Background</a>
-                                <a class="dropdown-item" href="#">Skills</a>
+                                <a class="dropdown-item" href="./skills.html">Skills</a>
                             </div>
                         </li>
                         <!--End of Menu Drop 1-->
@@ -65,7 +65,7 @@
                                 aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="./music.html">Music</a>
                                 <a class="dropdown-item" href="./food.html">Food</a>
-                                <a class="dropdown-item" href="#">Smash!</a>
+                                <a class="dropdown-item" href="./smash.html">Smash!</a>
                             </div>
                         </li>
                         <!--End of Menu Drop 2-->
@@ -171,7 +171,7 @@
         <!--End of Content-->
         <!--Start of footer-->
         <div class='container-fluid'>
-            <audio id="bgmusic">
+            <audio id="bgmusic" controls>
                 <source src="audio/clairdelune.mp3" type="audio/mpeg">
             </audio>
             <footer class="footer">
@@ -189,6 +189,7 @@
 <!--Start Custom JS-->
 <script src="js/main.js"></script>
 <script>
+    alert("Note: Google Chrome has disabled autoplay. Please play background music using the controller on the bottom of the page.")
     var audio = document.getElementById("bgmusic");
     musicbody = document.getElementById('musicbody');
     musicbody.addEventListener('mouseover', function () {
