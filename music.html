@@ -75,7 +75,7 @@
                             <!--Drop Menu + Animation-->
                             <div class="dropdown-menu animate slideIn bg-light">
                                 <a class="dropdown-item" href="./cybersecurity.html">Cybersecurity</a>
-                                <a class="dropdown-item" href="./dev">Software/Mobile Developer</a>
+                                <a class="dropdown-item" href="./dev.html">Software/Mobile Developer</a>
                             </div>
                         </li>
                         <!--End of Menu Drop 3-->
@@ -197,7 +197,9 @@
         var audio = document.getElementById("bgmusic");
         musicbody = document.getElementById('musicbody');
         musicbody.addEventListener('mouseover', function () {
-            audio.play();
+            audio.play().catch(function () {
+                console.log('load music');
+            });
         })
         musicbody.addEventListener('mouseout', function () {
             audio.pause();
