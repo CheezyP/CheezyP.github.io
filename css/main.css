@@ -113,7 +113,7 @@
 }
 
 
-.card-container .btn {
+.img-container .btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -129,7 +129,7 @@
     transition: 0.8s;
 }
 
-.card-container .btn:hover {
+.img-container .btn:hover {
     position: absolute;
     top: 50%;
     left: 50%;
