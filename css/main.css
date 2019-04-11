@@ -154,9 +154,28 @@ div {
     filter: contrast(80%);
     transition: 0.8s;
 }
+
 #pic-carousel:hover {
     filter: contrast(105%);
     transition: 0.8s;
+}
+
+#musicbody {
+    background-image: url('../images/music_img/starrysky.jpg');
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    transition: 3s;
+}
+
+#musicbody:hover {
+    background-image: url('../images/music_img/starrysky.jpg');
+    background-color: rgb(4, 4, 4);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 3s;
+    opacity: 1;
 }
 
 /*End of Content Items*/

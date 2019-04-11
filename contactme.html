@@ -51,8 +51,8 @@
                             <!--Drop Menu + Animation-->
                             <div class="dropdown-menu animate slideIn bg-light"
                                 aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Music</a>
-                                <a class="dropdown-item" href="#">Cooking</a>
+                                <a class="dropdown-item" href="./music.html">Music</a>
+                                <a class="dropdown-item" href="./food.html">Food</a>
                                 <a class="dropdown-item" href="#">Smash!</a>
                             </div>
                         </li>
@@ -122,7 +122,17 @@
                         </div>
                     </div>
                 </div>
-                <br>
+                <div class="form-row">
+                    <div class="col-lg-12 col-form-label-lg">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="country">Country</span>
+                            </div>
+                            <input type="email" class="form-control" id="country_input"
+                                placeholder="youremail123@gmail.com" aria-describedby="name_input">
+                        </div>
+                    </div>
+                </div>
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -145,7 +155,7 @@
             </form>
             <!--Comment Section-->
             <div>
-                <button class="btn btn-info col-lg-12" id="comment-toggle" data-toggle="collapse"
+                <button class="btn btn-secondary col-lg-12" id="comment-toggle" data-toggle="collapse"
                     data-target="#commentsection">Show Comments</button>
             </div>
             <div id="commentsection" class="collapse">
@@ -172,6 +182,21 @@
 </body>
 <!--Start Custom JS-->
 <script src="js/main.js"></script>
+<script>
+    var index = 1;
+    document.getElementById('comment-toggle').addEventListener("click", function () {
+        var options = ['Show Comments', 'Hide Comments'];
+        if (index == 1) {
+            document.getElementById('comment-toggle').innerHTML = options[index];
+            index--;
+            console.log(index);
+        } else {
+            document.getElementById('comment-toggle').innerHTML = options[index];
+            index++;
+            console.log(index);
+        }
+    })
+</script>
 <!--End Custom JS-->
 <!--Start of Bootstrap Script Code-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -204,6 +229,7 @@
         var fname = document.getElementById("fname_input").value;
         var lname = document.getElementById("lname_input").value;
         var email = document.getElementById("email_input").value;
+        var country = document.getElementById("country_input").value;
         var comment = document.getElementById("comment_input").value;
         if (fname == '' && lname == '') {
             alert(
@@ -211,15 +237,17 @@
             );
             fname = 'Mr.';
             lname = 'Smith';
+            country = 'Canada'
             comment = 'Looking good buckaroo!';
         } else {
-            alert("Thank you, " + fname + ', ' + lname + "!\nYour data will now upload to Firebase!");
+            alert("Thank you, " + fname + ' ' + lname + "!\nYour data will now upload to Firebase!");
         }
         var db = firebase.firestore();
         db.collection("comments").add({
             Comments: comment,
             FirstName: fname,
             LastName: lname,
+            Country: country,
             Email: email
         }).then(function (docRef) {
             console.log("Document written with ID: ", docRef.id);
@@ -237,12 +265,13 @@
             var lname = doc.data().LastName;
             var email = doc.data().Email;
             var comment = doc.data().Comments;
+            var country = doc.data().Country;
             var newDiv = document.createElement("div");
             var fullname = document.createElement("h2");
-            fullname.setAttribute('class', 'card-body')
-            fullname.appendChild(document.createTextNode(fname + ' ' + lname));
+            fullname.setAttribute('class', 'card-body');
+            fullname.appendChild(document.createTextNode(fname + ' ' + lname + ' from ' + country));
             var commentContent = document.createElement("h5");
-            commentContent.setAttribute('class', 'card-footer')
+            commentContent.setAttribute('class', 'card-footer');
             commentContent.appendChild(document.createTextNode(comment));
             newDiv.setAttribute('class', 'card cardbody');
             newDiv.appendChild(fullname);
