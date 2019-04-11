@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <style>
@@ -67,7 +67,7 @@
                             <div class="dropdown-menu animate slideIn bg-light"
                                 aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="./cybersecurity.html">Cybersecurity</a>
-                                <a class="dropdown-item" href="#">Software/Mobile Developer</a>
+                                <a class="dropdown-item" href="./dev.html">Software/Mobile Developer</a>
                             </div>
                         </li>
                         <!--End of Menu Drop 3-->
@@ -267,6 +267,9 @@
             var email = doc.data().Email;
             var comment = doc.data().Comments;
             var country = doc.data().Country;
+            if (country == '') {
+                country = 'Canada!';
+            }
             var newDiv = document.createElement("div");
             var fullname = document.createElement("h2");
             fullname.setAttribute('class', 'card-body');
