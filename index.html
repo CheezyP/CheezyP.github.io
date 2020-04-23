@@ -12,167 +12,165 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <style>
-        #navbar {
-            z-index: 1;
-        }
-    </style>
 </head>
 
 <body>
+
     <div class="container-fluid">
-        <!--Start of Header-->
+        <!--Navbar Content-->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
-                <!--Logo-->
-                <a class="navbar-brand" href="./index.html">JH</a>
-                <!--Hamburger-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHamburger"
-                    aria-controls="navbarHamburger" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarHamburger">
-                    <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <!--Menu Drop 1-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">About Me</a>
-                            <!--Drop Menu + Animation-->
-                            <div class="dropdown-menu animate slideIn bg-light">
-                                <a class="dropdown-item" href="./background.html">Background</a>
-                                <a class="dropdown-item" href="./skills.html">Skills</a>
-                            </div>
-                        </li>
-                        <!--End of Menu Drop 1-->
-                        <!--Menu Drop 2-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">Interests</a>
-                            <!--Drop Menu + Animation-->
-                            <div class="dropdown-menu animate slideIn bg-light">
-                                <a class="dropdown-item" href="./music.html">Music</a>
-                                <a class="dropdown-item" href="./food.html">Food</a>
-                                <a class="dropdown-item" href="./smash.html">Smash!</a>
-                            </div>
-                        </li>
-                        <!--End of Menu Drop 2-->
-                        <!--Menu Drop 3-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">Career
-                                Paths</a>
-                            <!--Drop Menu + Animation-->
-                            <div class="dropdown-menu animate slideIn bg-light">
-                                <a class="dropdown-item" href="./cybersecurity.html">Cybersecurity</a>
-                                <a class="dropdown-item" href="./dev.html">Software/Mobile Developer</a>
-                            </div>
-                        </li>
-                        <!--End of Menu Drop 3-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="./projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contactme.html">Contact Me</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
         </header>
-        <!--End of Header-->
+        <!--End of Navbar-->
         <br>
         <br>
         <!--Start of Content-->
         <div>
-            <!--Introduction-->
-            <div class="col-lg-12" id="particles-js">
+            <!--Bio-->
+            <div class="col-lg-12" id="bio">
+                <!--Introduction-->
                 <h2 id="introduction">Hello, my name is Jimmy. I'm currently in the Computer
                     Information Technology Program at BCIT.</h2>
             </div>
-            <!--Cards-->
-            <div>
-                <div class="card flex-row flex-wrap card-container">
-                    <div class="card-block col-lg-8">
-                        <h2 class="card-title" style="width: 100%">Background</h2>
-                        <br>
-                        <h4 class="card-text">Born and raised in Metro-Vancouver, I'm a Chinese Canadian with a
-                            background in music, psychology and computer science.</h4>
-                        <br>
-                        <h4 class="card-text">I'm a detail-oriented individual that seeks the best in others.</h4>
-                    </div>
-                    <div class="col-lg-4 img-container" style="padding:0 !important">
-                        <div style="overflow:hidden">
-                            <img src="./images/index_img/piano.jpg" style="width:auto; height:auto" alt="piano">
-                            <a href="./background.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card flex-row flex-wrap card-container">
-                    <div class="card-block col-lg-8">
-                        <h2 class="card-title">Programming</h2>
-                        <br>
-                        <h4 class="card-text">Programming languages I'm experienced in are:</h4>
-                        <ul>
-                            <li>
-                                <h5>Java</h5>
-                            </li>
-                            <li>
-                                <h5>Python</h5>
-                            </li>
-                            <li>
-                                <h5>SQL</h5>
-                            </li>
-                            <li>
-                                <h5>HTML5/CSS/JavaScript</h5>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 img-container" style="padding:0 !important">
-                        <div style="overflow:hidden">
-                            <img src="./images/index_img/coding.jpg" style="width:auto; height:auto" alt="code">
-                            <a href="./skills.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card flex-row flex-wrap card-container">
-                    <div class="card-block col-lg-8">
-                        <h2 class="card-title">Projects</h2>
-                        <br>
-                        <h4 class="card-text">From Hackathons, to BCIT courses, to my own free time, I've completed
-                            projects.
-                        </h4>
-                        <br>
-                        <h4 class="card-text">Platforms range from Snapchat API/JavaScript, to SQL, to Matplotlib.</h4>
-                    </div>
-                    <div class="col-lg-4 img-container" style="padding:0 !important">
-                        <div style="overflow:hidden">
-                            <img src="./images/index_img/github.jpg" style="width:auto; height:auto" alt="git">
-                            <a href="./projects.html" class="btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-    <!--End of Content-->
-    <br>
-    <br>
-    <!--Start of footer-->
-    <div class='container-fluid'>
-        <footer class="footer">
-            <hr class="my-4">
-            <div style="text-align: center">
-                <a href="https://www.facebook.com/Jimmy-608069566242063/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/jch0_/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/jimmy-ho-881117105/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/CheezyP"><i class="fab fa-github"></i></a>
-                <p style="color: grey">Copyrighted by Jimmy Ho, 2019 ©</p>
+    <!--Start of Content-->
+    <div class="col-lg-12" id="skills">
+        <h2 id="introduction">While I am still starting out as a disciple of the tech industry, I'm learning more and
+            more everyday. The points below are my skillsets. <br><br> “It does not matter how slowly you go as long as
+            you do not stop” - Confucius</h2>
+
+        <div class='container-fluid'>
+            <div class="container" style="text-align: center; margin-top:5%; margin-bottom:5%">
+                <br>
+                <h1>Front-end Web Developent</h1>
+                <h4>Front-end web development, also known as client-side development is the practice of producing HTML,
+                    CSS
+                    and JavaScript for a website or Web Application so that a user can see and interact with them
+                    directly.
+                </h4>
+                <br>
+                <i class="fab fskill fa-html5"></i>
+                <i class="fab fskill fa-css3"></i>
+                <i class="fab fskill fa-bootstrap"></i>
+                <i class="fab fskill fa-js"></i>
             </div>
-        </footer>
+            <hr class="my-4">
+            <div class="container" style="text-align: center; margin-top:5%; margin-bottom:5%">
+                <br>
+                <h1>Back-end Web Developent</h1>
+                <h4>The back end is the machine that runs a site—the user doesn’t see it or directly interact with it as
+                    with client-side technology, but it’s always running in the background, delivering smooth
+                    functionality,
+                    a desktop-like experience, and information from the database right into the browser.</h4>
+                <br>
+                <i class="fab fskill fa-node-js"></i>
+                <i class="fab fskill fa-python"></i>
+            </div>
+            <hr class="my-4">
+            <div class="container" style="text-align: center; margin-top:5%; margin-bottom:5%">
+                <br>
+                <h1>Software Developent</h1>
+                <h4>Software development is the process of conceiving, specifying, designing, programming, documenting,
+                    testing, and bug fixing involved in creating and maintaining applications, frameworks, or other
+                    software
+                    components.</h4>
+                <br>
+                <i class="fab fskill fa-java"></i>
+                <i class="fab fskill fa-js"></i>
+                <i class="fab fskill fa-python"></i>
+                <i class="fab fskill fa-android"></i>
+            </div>
+            <hr class="my-4">
+        </div>
     </div>
+    <!--End of Skills Sections-->
+    <!--Start of Contact Me-->
+    <div class='container-fluid'>
+        <div>
+            <h1 style="text-align: center">Contact Me</h1>
+        </div>
+        <form style="margin: 5%" action='#' method="POST">
+            <div class="form-row">
+                <div class="col-lg-12 col-form-label-lg">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">First Name</span>
+                        </div>
+                        <input type="text" class="form-control" id="fname_input" placeholder="John Doe" required
+                            aria-describedby="fname_input">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-lg-12 col-form-label-lg">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Last Name</span>
+                        </div>
+                        <input type="text" class="form-control" id="lname_input" placeholder="John Doe"
+                            aria-describedby="lname_input">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-lg-12 col-form-label-lg">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="email">Email</span>
+                        </div>
+                        <input type="email" class="form-control" id="email_input" placeholder="youremail123@gmail.com"
+                            aria-describedby="email_input">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-lg-12 col-form-label-lg">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="country">Country</span>
+                        </div>
+                        <input type="email" class="form-control" id="country_input" placeholder="youremail123@gmail.com"
+                            aria-describedby="country_input">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="comment">Notes</span>
+                    </div>
+                    <textarea class="form-control" rows="12" id="comment_input"
+                        placeholder="Write your comments here!"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-lg-6">
+                    <button style="width:100%" class="btn btn-danger" type="reset">Clear
+                        Form</button>
+                </div>
+                <div class="col-lg-6">
+                    <button style="width:100%" class="btn btn-success" id="submitButton" onclick="addData()"
+                        type="submit">Submit Form</button>
+                </div>
+            </div>
+        </form>
+        <!--End of Contact Me-->
+    </div>
+    <!--End of Content-->
+    <!--Start of footer-->
+    <footer class="footer container-fluid" id="footer">
+        <hr class="my-4">
+        <div style="text-align: center">
+            <a href="https://www.facebook.com/Jimmy-608069566242063/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/jch0_/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jimmy-ho-881117105/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/CheezyP"><i class="fab fa-github"></i></a>
+            <p style="color: grey">Copyrighted by Jimmy Ho, {{2019}} ©</p>
+        </div>
+    </footer>
     <!--End of footer-->
+
+
     <!--Start Custom JS-->
     <script src="./js/main.js">
     </script>
@@ -184,13 +182,13 @@
     <!--Start of Bootstrap Script Code-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
     <!--End of Bootstrap Script Code-->
 </body>
 
